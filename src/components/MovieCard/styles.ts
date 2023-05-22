@@ -16,6 +16,7 @@ export const ShowBox = styled.div`
   flex-shrink: 0;
   scroll-behavior: smooth;
   cursor: pointer;
+  max-width: 250px;
 `;
 
 export const ImageContainer = styled.div`

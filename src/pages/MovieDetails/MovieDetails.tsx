@@ -127,7 +127,7 @@ const MovieDetails = () => {
     //     console.log("ID:", favoriteIds)
     // }, [favoriteIds]);
 
-    const posterImage = movieDetail?.poster_path ? `https://image.tmdb.org/t/p/w500${movieDetail.poster_path}` : '';
+    const posterImage = movieDetail?.poster_path ? `https://image.tmdb.org/t/p/w500${movieDetail.poster_path}` : "https://tacm.com/wp-content/uploads/2018/01/no-image-available.jpeg";
 
     return (
         <>

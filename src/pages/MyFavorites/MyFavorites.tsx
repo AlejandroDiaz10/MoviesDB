@@ -61,7 +61,7 @@ const MyFavorites = () => {
           <>
             <Header>My Favorites</Header>
             {favoriteMovies.length === 0 ? (
-              <h3>No hay favoritos agregados!</h3>
+              <h3>No favorites added!</h3>
             ) : (
               favoriteMovies.map((movie) => (
                 <MovieCard

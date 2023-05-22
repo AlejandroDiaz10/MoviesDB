@@ -11,14 +11,24 @@ export const MainContainer = styled.div`
 display: flex;
 `;
 
+export const HeaderContainer = styled.div`
+display: flex;
+align-items: center;
+margin: 10px auto 10px 2.5%;
+`;
+
 export const Header = styled.h1`
 color: black;
-font-size: 2.5rem;
+font-size: 2rem;
 text-transform: uppercase;
-width: 95%;
-margin: 10px auto 10px 2.5%;
 position: sticky;
-`
+letter-spacing: -2px;
+margin: 0px;
+&:hover {
+    cursor: pointer;
+    color: grey;
+}
+`;
 
 export const Carousel = styled.div`
 overflow-x: auto; 

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { getPopular, getTopRated, getNowPlaying } from 'services';
 import { MovieCard } from 'components/MovieCard';
 import { CircularProgress } from '@mui/material';
-import { SpinnerContainer, MainContainer, Header, Carousel, HomeWrapper, Section } from './styles';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { SpinnerContainer, MainContainer, Header, Carousel, HomeWrapper, Section, HeaderContainer } from './styles';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -60,6 +61,11 @@ const Home = () => {
     navigate(`/movie/${id}`);
   };
 
+  // ---------------------------------------------------------- Navigation
+  const handleNavigationClick = (page: string) => {
+    navigate(`/${page}`);
+  };
+
   // ---------------------------------------------------------- Use Effect
   useEffect(() => {
     setLoading(true);
@@ -75,7 +81,9 @@ const Home = () => {
       {!loading ? (
         <HomeWrapper>
           <Section>
-            <Header >Popular</Header>
+            <HeaderContainer>
+              <Header onClick={() => handleNavigationClick("popular")} >Popular <span><NavigateNextIcon style={{ fontSize: 30 }} /></span> </Header>
+            </HeaderContainer>
             <Carousel>
               <MainContainer>
                 {popularMovies.map((movie) => (
@@ -94,7 +102,9 @@ const Home = () => {
           </Section>
 
           <Section>
-            <Header>Top Rated</Header>
+            <HeaderContainer>
+              <Header onClick={() => handleNavigationClick("top-rated")}>Top Rated <span><NavigateNextIcon style={{ fontSize: 30 }} /></span></Header>
+            </HeaderContainer>
             <Carousel>
               <MainContainer>
                 {topRatedMovies.map((movie) => (
@@ -113,7 +123,9 @@ const Home = () => {
           </Section>
 
           <Section>
-            <Header>Now Playing</Header>
+            <HeaderContainer>
+              <Header onClick={() => handleNavigationClick("now-playing")}>Now Playing <span><NavigateNextIcon style={{ fontSize: 30 }} /></span></Header>
+            </HeaderContainer>
             <Carousel>
               <MainContainer>
                 {nowPlayingMovies.map((movie) => (

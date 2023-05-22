@@ -40,6 +40,7 @@ font-size: 2.5rem;
 text-transform: uppercase;
 line-height: 2.7rem;
 margin: 20px auto;
+letter-spacing: -2px;
 `
 
 export const Header = styled.h2`
@@ -49,7 +50,8 @@ text-transform: uppercase;
 width: 95%;
 margin: 10px auto 10px 2.5%;
 position: sticky;
-font-weight: 500;
+font-weight: 600;
+letter-spacing: -1px;
 `
 
 export const Text = styled.p`

@@ -21,7 +21,9 @@ const MovieCard: React.FC<MovieCardProp> = ({
   id,
   onClick,
 }) => {
-  const poster = IMAGE_SOURCE + path;
+  //https://tacm.com/wp-content/uploads/2018/01/no-image-available.jpeg
+  const posterImage = IMAGE_SOURCE + path;
+  const poster = path === null ? "https://tacm.com/wp-content/uploads/2018/01/no-image-available.jpeg" : IMAGE_SOURCE + path;
 
   const getGenre = (genreId: number) => {
     const key: any = Object.keys(genres.genres).find(

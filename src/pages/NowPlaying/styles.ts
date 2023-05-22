@@ -22,4 +22,5 @@ font-size: 2.5rem;
 text-transform: uppercase;
 width: 95%;
 margin: 10px auto 10px 2.5%;
+letter-spacing: -2px;
 `
