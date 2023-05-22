@@ -6,6 +6,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Installs all dependencies used in this project. This will automatically create a new directory (node_modules)
+
+### `Create an account in TMDB`
+
+* Go to [https://www.themoviedb.org/?language=es](TMDB)
+* Join TMDB
+* Obtain your personal API KEY
+* Create a .env file
+* Save your API KEY in the .env file with the name: REACT_APP_MDB_API_KEY
+
+### `Follow the guide!`
+
+Open [https://developer.themoviedb.org/reference/intro/getting-started](Getting started) make the modifications you wish!
+
 ### `yarn start`
 
 Runs the app in the development mode.\
