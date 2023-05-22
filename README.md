@@ -12,15 +12,14 @@ Installs all dependencies used in this project. This will automatically create a
 
 ### `Create an account in TMDB`
 
-* Go to [https://www.themoviedb.org/?language=es](TMDB)
-* Join TMDB
+* Go to [TMDB](https://www.themoviedb.org/?language=es)
+* Click "Join TMDB"
 * Obtain your personal API KEY
 * Create a .env file
 * Save your API KEY in the .env file with the name: REACT_APP_MDB_API_KEY
 
 ### `Follow the guide!`
-
-Open [https://developer.themoviedb.org/reference/intro/getting-started](Getting started) make the modifications you wish!
+Open [Getting started](https://developer.themoviedb.org/reference/intro/getting-started) and make the modifications you wish!
 
 ### `yarn start`
 
